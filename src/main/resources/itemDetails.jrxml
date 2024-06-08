@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ItemDetails" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="0" rightMargin="0" topMargin="10" bottomMargin="10" uuid="dcc0f738-299e-4e8f-a18b-b016d50a5d33">
+    <field name="silItemName" class="java.lang.String"/>
+    <field name="measurementUnit" class="java.lang.String"/>
+    <field name="pricePerUnit" class="java.lang.String"/>
+    <field name="quantity" class="java.lang.String"/>
+    <field name="silItemCategory" class="java.lang.String"/>
+    <field name="silItemType" class="java.lang.String"/>
+    <field name="remarks" class="java.lang.String"/>
+    <pageHeader>
+        <band height="30">
+            <staticText>
+                <reportElement mode="Opaque" x="0" y="0" width="535" height="30" backcolor="#E0E0E0" uuid="94d19e9d-06ea-434d-8d15-4102705639bc"/>
+                <box>
+                    <pen lineWidth=".5" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Item Details Report]]></text>
+            </staticText>
+        </band>
+    </pageHeader>
+    <columnHeader>
+        <band height="20">
+            <staticText>
+                <reportElement x="0" y="0" width="80" height="20" uuid="ec599775-4053-4018-b377-0dd796af0b78"/>
+                <box>
+                    <pen lineWidth=".5" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+                <textElement>
+                    <font size="12" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Item Name]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="80" y="0" width="90" height="20" uuid="dd870a91-9e08-4c01-8849-b726e9e2a6f4"/>
+                <box>
+                    <pen lineWidth=".5" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+                <textElement>
+                    <font size="12" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Price/Unit]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="170" y="0" width="100" height="20" uuid="48732ab2-42bb-401b-be19-42d6752683cb"/>
+                <box>
+                    <pen lineWidth=".5" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+                <textElement>
+                    <font size="12" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Quantity]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="270" y="0" width="100" height="20" uuid="f76e6d89-ebde-4abb-840e-39e95a15c32a"/>
+                <box>
+                    <pen lineWidth=".5" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+                <textElement>
+                    <font size="12" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Type]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="370" y="0" width="165" height="20" uuid="898d796a-5dd0-402c-965e-84f563551c51"/>
+                <box>
+                    <pen lineWidth=".5" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+                <textElement>
+                    <font size="12" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Remarks]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="20">
+            <textField>
+                <reportElement x="0" y="0" width="80" height="20" uuid="01c33548-4b1a-43c4-9d98-b2a19246a37c"/>
+                <box>
+                    <pen lineWidth=".5" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{silItemName}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="170" y="0" width="100" height="20" uuid="43b4bca7-9744-4221-af1e-a258a0a14048"/>
+                <box>
+                    <pen lineWidth=".5" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{quantity}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="80" y="0" width="90" height="20" uuid="53abc4b7-8f62-45fc-827a-9a4823075523"/>
+                <box>
+                    <pen lineWidth=".5" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{pricePerUnit}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="270" y="0" width="100" height="20" uuid="75084655-8e1b-46cd-a96c-b91aa7478fda"/>
+                <box>
+                    <pen lineWidth=".5" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{silItemType}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="370" y="0" width="165" height="20" uuid="9b4bd89c-c434-499f-b418-cb3927114d7f"/>
+                <box>
+                    <pen lineWidth=".5" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{remarks}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+    <columnFooter>
+        <band height="20"/>
+    </columnFooter>
+</jasperReport>
